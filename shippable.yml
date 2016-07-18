@@ -21,12 +21,12 @@ build:
     - ls -al
 
   post_ci:
-    - docker build -t=quay.io/shippablequay/hitchcock3_sample_java .
-    - docker push quay.io/shippablequay/hitchcock3_sample_java
+    - docker build -t=quay.io/shippablequay/hitchcock31 .
+    - docker push quay.io/shippablequay/hitchcock31
 
 integrations:
   hub:
-    - integrationName: ship-quay
+    - integrationName: test_quay
       type: quay.io
     #  branches:
      #   only:
